@@ -8,10 +8,12 @@ All figures are FY‑based; totals shown as a range to reflect the $1–2 M es
 | **AI Consultant** (contracted development, 0.5 FTE) | $20k–$28k | $20k–$28k | $20k–$28k | $20k–$28k | $20k–$28k | $100k–$140k |
 | **Subaward – Grow Next Gen** (host platform, licensing) | $30k–$50k | $40k–$60k | $40k–$60k | $35k–$55k | $30k–$45k | $175k–$280k |
 | **Travel & Participant Support** (workshop travel, stipends) | $20k–$35k | $25k–$40k | $25k–$40k | $20k–$35k | $15k–$30k | $105k–$180k |
-| **Supplies & Equipment** (computers, Jupyter Notebook environments, lab kits) | $15k–$25k | $10k–$20k | $10k–$20k | $8k–$15k | $5k–$12k | $48k–$92k |
-| **Servers & Cloud Services** (see notes below) | $50k–$100k | $40k–$80k | $35k–$70k | $30k–$60k | $25k–$50k | $180k–$360k |
-| **Indirect Costs** (30 % of Modified Total Direct Costs) | $97.5k–$162k | $113.5k–$185.4k | $112.5k–$183k | $97.4k–$160.2k | $85.5k–$147.6k | $506.4k–$838.2k |
-| **Total FY‑Based** | **$387.5k–$655.4k** | **$423.5k–$701.4k** | **$423.5k–$701.4k** | **$382.9k–$651.6k** | **$347.5k–$603.6k** | **$1.965M–$3.264M** |
+| **Supplies & Equipment** (see detailed breakdown below) | $45k–$70k | $35k–$60k | $35k–$60k | $30k–$55k | $25k–$45k | $170k–$290k |
+| **Cloud Infrastructure** (GPU/CPU compute, storage, APIs) | $35k–$60k | $30k–$50k | $28k–$48k | $25k–$45k | $22k–$40k | $140k–$243k |
+| **Vector Database & MLOps** | $6k–$10k | $6k–$10k | $6k–$10k | $6k–$10k | $6k–$10k | $30k–$50k |
+| **LLM API Credits** (ChatGPT, Gemini, Grok) | $18k–$30k | $15k–$25k | $14k–$24k | $12k–$22k | $10k–$20k | $70k–$111k |
+| **Indirect Costs** (30 % of Modified Total Direct Costs) | $145k–$250k | $169.5k–$285k | $167.4k–$283k | $150.9k–$267.4k | $138.15k–$249.1k | $771k–$1.335M |
+| **Total FY‑Based** | **$470k–$823k** | **$516.5k–$890k** | **$510.4k–$883k** | **$464.9k–$817.4k** | **$390.15k–$685.1k** | **$2.35M–$3.49M** |
 
 > **Note:** The FY totals exceed the $1‑2 M range because they include a 30 % indirect cost rate on the *modified* direct costs (the standard university rate). If the sponsor caps total award at $2 M, the indirect rate will be applied to the allowable direct‑cost ceiling, resulting in an adjusted direct‑cost envelope of roughly **$1.5 M** and indirects of **~$0.45 M**, keeping the overall award within the requested range.
 
@@ -29,15 +31,73 @@ All figures are FY‑based; totals shown as a range to reflect the $1–2 M es
 - Platform licensing (Grow Next Gen) – $10k/yr plus implementation services.
 - Contingency for alternative Canvas delivery ($15k/yr).
 
-### Server & Cloud Services Assumptions
+### Supplied & Equipment Breakdown (2000 users over 5 years)
 
-| Service Type | Description | Options |
-|--------------|-------------|---------|
-| **Vision AI Training Server** | GPU server for training and fine-tuning the Vision AI model | - On-premise GPU workstation ($15k–$25k)<br>- Cloud training (AWS EC2 P4/P5, Google Compute GPU) ($10k–$20k/yr) |
-| **RAG LLM Server** | GPU/CPU server for running the RAG pipeline and serving LLM responses | - On-premise inference server ($10k–$20k)<br>- Cloud LLM API credits or GPU instance ($8k–$15k/yr) |
-| **Software Serving Server** | Web server for hosting the AI tools (Vision AI, LLM "Ask the Expert", RAG) | - Cloud hosting (AWS EC2, Google Cloud) ($5k–$10k/yr)<br>- On-premise server ($8k–$15k) |
+| Item | Qty | Unit Cost | Total |
+|------|-----|-----------|-------|
+| **Development Laptops** (for team/instructors) | 10 | $2,500 | $25k |
+| **Shared Workshop Laptops** (Chromebooks/low-cost) | 50 | $400 | $20k |
+| **Smartphones** (for Vision AI testing) | 20 | $600 | $12k |
+| **Field Imaging Kit** (macro lenses, lighting, tripods) | 1 set | $8k | $8k |
+| **On-Prem GPU Workstations** (RTX 4090, for demos/training) | 2 | $7k | $14k |
 
-**Notes:**
-- Buying servers or paying for cloud services may be done; approach will be determined based on cost-effectiveness, scalability needs, and team technical capacity.
-- Cloud services offer flexibility but have ongoing costs; on-premise requires upfront investment but lower long-term costs.
-- Server costs are estimates and will depend on final architecture decisions (cloud vs. on-premise). The budget range accounts for both options.
+**Total Hardware/Equipment: ~$79k (spread across 5 years)**
+
+### Cloud Infrastructure Breakdown
+
+| Component | Monthly Cost | Annual | Notes |
+|-----------|--------------|--------|-------|
+| GPU compute (AWS P4/P5 for Vision AI training) | $1,200 | $14.4k | Burst usage during model development |
+| CPU compute (APIs, RAG, web apps) | $450 | $5.4k | Always-on services |
+| Storage (datasets, models, documents) | $250 | $3k | ~10–20 TB over time |
+| Networking / misc | $200 | $2.4k | Data transfer, load balancers |
+| **Cloud Subtotal** | ~$2,100 | **~$25.2k/yr** | |
+
+### LLM API Credits Breakdown (2000 users)
+
+| Service | Monthly Queries | Cost/Month | Notes |
+|---------|-----------------|------------|-------|
+| OpenAI API (GPT-4.1) | 20k–30k | $1,500 | Primary LLM for "Ask the Expert" |
+| Google Gemini API | 10k–15k | $500 | Comparison and fallback |
+| xAI Grok API | 5k–10k | $300 | Optional for comparison |
+| Open-source models (Hugging Face) | Variable | $200–$300 | Self-hosted or API credits |
+
+**Total LLM APIs: ~$2,500–$3,000/month → $140k–$180k over 5 years**
+
+### Vector Database & MLOps
+
+| Component | Cost/Year |
+|-----------|-----------|
+| Pinecone/Weaviate (RAG vector DB) | $6k |
+| Weights & Biases / MLflow | $2.4k (200/month) |
+| Dataset labeling tools | $10k |
+| Backup & archival storage | $1.2k |
+
+**Total: ~$20k–$30k over 5 years**
+
+### Learning Management Systems
+
+| Platform | Cost/Year |
+|----------|-----------|
+| Canvas (ScarletCanvas) licensing + hosting | $15k |
+| Grow Next Gen licensing | $10k–$12k |
+
+**Total LMS: ~$75k over 5 years**
+
+### Jupyter Platforms
+
+| Option | Cost/Year |
+|--------|-----------|
+| Google Colab Pro / JupyterHub hosting | $6k (500/month) |
+
+**Total: ~$30k over 5 years**
+
+### Key Cost Insights
+
+1. **AI usage is NOT the dominant cost** - Infrastructure + LMS + data work = majority
+2. **Scales well to 2,000 users** - Cloud + API model avoids linear hardware scaling
+3. **Cost reduction options available** - More open-source models, university infrastructure
+
+---
+
+*Budget prepared: April 6, 2026*
