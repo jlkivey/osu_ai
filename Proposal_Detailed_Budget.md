@@ -5,13 +5,13 @@ All figures are FY‑based; totals shown as a range to reflect the $1–2 M es
 | Category | FY 2026‑27 | FY 2027‑28 | FY 2028‑29 | FY 2029‑30 | FY 2030‑31 | Subtotal (5 yr) |
 |----------|------------|-----------|-----------|-----------|-----------|----------------|
 | **Personnel** (PI, Co‑PIs, staff salaries & benefits) | $150k–$250k | $200k–$300k | $200k–$300k | $180k–$260k | $160k–$240k | $890k–$1.35M |
-| **AI Consultant** (contracted development, 0.5 FTE) | $20k–$35k | $28k–$45k | $28k–$45k | $20k–$35k | $17.5k–$30k | $113.5k–$190k |
+| **AI Consultant** (contracted development, 0.5 FTE) | $20k–$28k | $20k–$28k | $20k–$28k | $20k–$28k | $20k–$28k | $100k–$140k |
 | **Subaward – Grow Next Gen** (host platform, licensing) | $30k–$50k | $40k–$60k | $40k–$60k | $35k–$55k | $30k–$45k | $175k–$280k |
 | **Travel & Participant Support** (workshop travel, stipends) | $20k–$35k | $25k–$40k | $25k–$40k | $20k–$35k | $15k–$30k | $105k–$180k |
 | **Supplies & Equipment** (computers, Jupyter Notebook environments, lab kits) | $15k–$25k | $10k–$20k | $10k–$20k | $8k–$15k | $5k–$12k | $48k–$92k |
 | **Servers & Cloud Services** (see notes below) | $50k–$100k | $40k–$80k | $35k–$70k | $30k–$60k | $25k–$50k | $180k–$360k |
-| **Indirect Costs** (30 % of Modified Total Direct Costs) | $75k–$120k | $85k–$135k | $82.5k–$130k | $72k–$112k | $64k–$100k | $378.5k–$597k |
-| **Total FY‑Based** | **$360k–$595k** | **$428k–$670k** | **$425k–$670k** | **$385k–$612k** | **$347.5k–$582k** | **$1.94M–$3.13M** |
+| **Indirect Costs** (30 % of Modified Total Direct Costs) | $97.5k–$162k | $113.5k–$185.4k | $112.5k–$183k | $97.4k–$160.2k | $85.5k–$147.6k | $506.4k–$838.2k |
+| **Total FY‑Based** | **$387.5k–$655.4k** | **$423.5k–$701.4k** | **$423.5k–$701.4k** | **$382.9k–$651.6k** | **$347.5k–$603.6k** | **$1.965M–$3.264M** |
 
 > **Note:** The FY totals exceed the $1‑2 M range because they include a 30 % indirect cost rate on the *modified* direct costs (the standard university rate). If the sponsor caps total award at $2 M, the indirect rate will be applied to the allowable direct‑cost ceiling, resulting in an adjusted direct‑cost envelope of roughly **$1.5 M** and indirects of **~$0.45 M**, keeping the overall award within the requested range.
 
